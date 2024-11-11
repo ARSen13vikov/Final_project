@@ -38,7 +38,7 @@ function displayArticles(articles) {
             <div class="col-12 col-md-6 mb-4">
                 <div class="card p-3">
                     <h5>${article.title}</h5>
-                    <p>${article.date} | ${article.views} views</p>
+                    <p>${article.date} | ${article.views} views| ${article.category}</p>
                     <p>Estimated read: ${Math.ceil(article.wordCount / 200)} min</p>
                     <p>${article.content.substring(0, 100)}...</p>
                     <button class="btn btn-primary" onclick="viewArticle('${article.title}')">Read More</button>
